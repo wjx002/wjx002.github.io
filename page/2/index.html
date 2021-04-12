@@ -182,490 +182,31 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/04/12/%E5%BC%82%E5%B8%B8/">异常</a>
+        <a href="/2021/04/12/%E5%8F%98%E9%87%8F%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/">变量和运算符</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/04/12/%E5%BC%82%E5%B8%B8/">
-          
-          
-            
-          
-          异常机制目录
-什么是异常
-异常指程序运行中出现的不期而遇的各种状况，如文件找不到，网络连接失败，非法参数
-异常发生在程序运行期间，他影响了正常运行
-
-简单分类
-检测性异常
-运行时异常
-错误ERROR
-
-异常体系结构
-java把异常当做对象来处理，并定义一个基类java.lang.Throwable作为所有异常的超类
-在java API中已经定义了许多异常类，这些异常类分为两大类，错误ERROR和异
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:28" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E5%86%85%E9%83%A8%E7%B1%BB/">内部类</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E5%86%85%E9%83%A8%E7%B1%BB/">
+        <a href="/2021/04/12/%E5%8F%98%E9%87%8F%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/">
           
           
             
           
           
-2021/03/29 星期一
+变量和运算符
+2021/03/10 星期三
 
-1234567891011121314151617181920212223242526public class Outer &#123;    private int id = 10;    public void out() &#123;        System.out.println(&quot;这是外部类的方法&quot;);    &#125;    
-        </a>
-      </p>
+一、变量定义：可以变化的量
+**java变量是程序中最基础的存储单元，其要素包括变量名，变量类型 和  作用域 **
 
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:28" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+变量名的命名原则
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3/">抽象类和接口</a>
-      </h1>
+变量的类型
 
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3/">
-          
-          
-            
-          
-          
-2021 /03/29 星期一
+局部变量
+类变量
+全局变量
 
-抽象类
-
-```//抽象类的所有方法，继承它的子类，必须实现它的所有方法，
-1234- ```  /抽象类 abstract 类 extends ：单继承   没有多继承  //但是  接口 可以多继承
-```//1.不能new这个抽象类，只能靠子类去实现它；约束！//2.抽象类里面可以写普通的方法//3.抽象方法只能写在抽象类中//抽象的抽象：约束
-//思考题
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:28" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E7%AE%80%E5%8D%95%E5%B0%8F%E7%BB%93%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/">面向对象简单小结类和对象</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E7%AE%80%E5%8D%95%E5%B0%8F%E7%BB%93%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/">
-          
-          
-            
-          
-          简单小结类和对象
-2021/03/23 星期二
-
-1234567891011121314151617181920212223241.类与对象     类是一个模板 抽象的，对象是一个具体实例2.方法    定义、调用！3.对象的引用    引用类型        基本类型（8个）    对象是通过引用来操作的： 栈-----&gt;堆4.属性：字段field 成员变量    默认初始化：     
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:27" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">面向对象</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-          
-          
-            
-          
-          面向对象
-java的核心思想就是OOP（面向对象编程的缩写）
-
-1.目录
-2.面向过程和面向对象
-面向过程思想（线性思维）
-
-步骤清晰简单，第一步做什么，第二部做什么…
-面对过程适合处理一些较为简单的问题
-
-
-面向对象思想
-
-物以类聚，分类的思维模式，思考问题首先会解决问题需要哪些分类，然后对这些分类进行单独思考。最后，对某些分类下的细节进行面向过程的思索。
-面向对象适合处理复杂的问题，适合处理需
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:27" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E6%95%B0%E7%BB%84/">数组</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E6%95%B0%E7%BB%84/">
-          
-          
-            
-          
-          数组
-2021/03/15 星期一
-
-目录
-数组的定义
-
-数组是相同类型的数据的有序集合
-
-数组描述的是相同类型的若干个数据，按照一定的先后次序排序组合而成
-
-其中，每一个数据称作一个数组元素，每个数组元素可以通过一个下标来访问它们
-
-数组的下标是从0开始的
-
-
-
-数组的创建
-1234567891011121314151617181920212223242526272829303132333435
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:26" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/java%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/">java方法详解</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/java%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/">
-          
-          
-            
-          
-          java方法详解
-2021/03/15 星期一
-
-
-java方法是语句的集合，它们扎起一起执行一个功能
-
-方法是解决一类问题的步骤的有序集合
-方法包含于类或者对象中
-方法在程序中被创建，在其他地方被引用
-
-
-设计方法原则：方法的本意是功能块，就是实现某个功能的语句块的集合。我们设计方法的时候，最好保持方法的原子性，就是一个方法只完成一个功能，这样利于我们后期的拓展
-
-方法的定义
-
-方法的构成方法包
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:26" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/Scanner/">Scanner</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/Scanner/">
-          
-          
-            
-          
-          浅谈scanner12//创建一个扫描器对象，用于接收键盘数据Scanner scanner = new Scanner(System.in);
-
-创建scanner对象，便于用户输入数据，提高交互
-123//凡是属于IO流的类如果不关闭就会一直占用资源，要养成好习惯用完就关掉scanner.close();
-
-用完就关闭
-12345678910//scanner的相关函数scanner.next
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:26" pubdate>
-              2021-04-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/04/12/%E5%8C%85%E6%9C%BA%E5%88%B6%E5%92%8C%E6%96%87%E6%A1%A3%E6%B3%A8%E9%87%8A/">包机制和文档注释</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/04/12/%E5%8C%85%E6%9C%BA%E5%88%B6%E5%92%8C%E6%96%87%E6%A1%A3%E6%B3%A8%E9%87%8A/">
-          
-          
-            
-          
-          包机制和文档注释
-2021/03/15 星期一
-
-一、包机制类似文件夹：可以在不同文件夹中放置相同命名的类型文件
-
-一般用域名倒置作为包名
-在java中导包
-
-
-
-
-
-二、javadoc（文档注释）12345678910//在java中的文档注释/**@author:wujiaxu@version 1.8@since 指明最低版本1.8@param 参数@return 返回值情况@throws 异
+12345678910111213141516171819202122232425262728293031323334353637383940package base;
         </a>
       </p>
 
@@ -704,19 +245,25 @@ java方法是语句的集合，它们扎起一起执行一个功能
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/04/12/%E6%9C%89%E5%85%B3idea/">有关idea</a>
+        <a href="/2021/04/12/java%E6%B3%A8%E9%87%8A%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">java注释和标识符和数据类型</a>
       </h1>
 
       <p class="index-excerpt">
-        <a href="/2021/04/12/%E6%9C%89%E5%85%B3idea/">
+        <a href="/2021/04/12/java%E6%B3%A8%E9%87%8A%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
           
           
             
           
-          
-2021/03/08 星期一
+          java注释、标识符和数据类型java注释
+2021/03/09  星期二
 
-关于idea一、idea的快捷键12345678910111213alt + enter #万能纠错/生成返回值变量shift + enter #换行ctrl + shift + enter #自动alt + down #向下换行 其他同理ctrl + 选择的函数左键 #查看源代码ctrl + y #删除光标所在行ctrl + alt + / #提示方法参数类型C
+注释类型
+
+单行注释
+多行注释
+文档注释（javadoc）
+
+12345678910111213public static void main(String[] args)&#123;    //这是单行注释        /*    这是多行注释    */        /**    @author:吴家旭    这
         </a>
       </p>
 
@@ -724,7 +271,7 @@ java方法是语句的集合，它们扎起一起执行一个功能
         
           <div class="post-meta mr-3">
             <i class="iconfont icon-date"></i>
-            <time datetime="2021-04-12 21:25" pubdate>
+            <time datetime="2021-04-12 21:24" pubdate>
               2021-04-12
             </time>
           </div>
@@ -744,6 +291,411 @@ java方法是语句的集合，它们扎起一起执行一个功能
               <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
             
           </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/12/java%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E4%BC%98%E5%8A%BF/">java的特性和优势</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/12/java%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E4%BC%98%E5%8A%BF/">
+          
+          
+            
+          
+          java的特性和优势
+2020/03/07
+
+特性：
+
+简单性
+面向对象
+可移植性
+高性能
+分布式
+动态性
+多线程
+安全性
+健壮性
+
+java的三大版本
+javaSE：标准版（桌面程序，控制台开发）
+javaME(已经没落)
+javaEE：E企业级开发
+
+JDK、JRE、JVMJDK：Java Development Kit
+JRE：java Runtime Environment（运行环境）
+J
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-12 21:24" pubdate>
+              2021-04-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/12/doc%E5%BF%AB%E6%8D%B7%E9%94%AE/">doc快捷键</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/12/doc%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+          
+          
+            
+          
+          doc常用快捷键
+2020年3月7号
+
+1234567891011121314151617181920212223242526#盘符切换 大写字母+:#查看当前目录下的文件：dir#切换目录 cd    cd /d f:  跨盘符需要加/d 不跨盘不需要    cd .. 返回上一级#清理屏幕：cls#退出终端：exit#查看电脑ip：ipconfig#打开应用    calc 计算机    ms
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-12 21:23" pubdate>
+              2021-04-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/javaSE%E5%9F%BA%E7%A1%80/">javaSE基础</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/11/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0/">多线程学习</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/11/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AD%A6%E4%B9%A0/">
+          
+          
+            
+          
+          多线程的学习1.目录
+2.线程、进程、多线程
+线程(Thread)：线程就是独立的执行路径；
+进程(process)：进程是执行程序的一次执行过程，它是一个动态的概念。是系统资源分配的单位
+一般一个进程中可以包括多个线程，当然一个进程中至少有一个线程，不然就没有存在的意义。线程是CPU调度和执行的单位
+
+
+注意：很多线程是模拟出来的，真正的多线程是只有多个cpu，即多核，如服务器。如果是模拟出来的
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-11 17:09" pubdate>
+              2021-04-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">多线程</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/01/1006%E7%AC%A8%E9%98%B6%E4%B9%98/">1006笨阶乘</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/01/1006%E7%AC%A8%E9%98%B6%E4%B9%98/">
+          
+          
+            
+          
+          题目描述：
+通常，正整数 n 的阶乘是所有小于或等于 n 的正整数的乘积。例如，factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1。
+相反，我们设计了一个笨阶乘 clumsy：在整数的递减序列中，我们以一个固定顺序的操作符序列来依次替换原有的乘法操作符：乘法(*)，除法(/)，加法(+)和减法(-)。
+例如，clumsy(10) = 10 
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-01 09:14" pubdate>
+              2021-04-01
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/LeetCode/">LeetCode</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/20/59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52/">59螺旋矩阵2</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/20/59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52/">
+          
+          
+            
+          
+          59、螺旋矩阵2
+给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
+
+
+
+12输入：n = 3输出：[[1,2,3],[8,9,4],[7,6,5]]
+
+思路：
+按照上一行—&gt;右一列—-&gt;下一行—–&gt;左一列的思路来做
+用left  right top down来记录上下左右的位置
+每次遍历外一圈之后
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-20 20:20" pubdate>
+              2021-03-20
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/LeedCode/">-LeedCode</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/18/%E8%AE%BE%E8%AE%A1%E5%93%88%E5%B8%8C%E9%9B%86%E5%90%88-1/">设计哈希集合</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/18/%E8%AE%BE%E8%AE%A1%E5%93%88%E5%B8%8C%E9%9B%86%E5%90%88-1/">
+          
+          
+            
+          
+          705.设计哈希集合
+2021/02/14 星期日
+
+
+不使用任何内建的哈希表库设计一个哈希集合（HashSet）。
+实现 MyHashSet 类：
+void add(key) 向哈希集合中插入值 key 。bool contains(key) 返回哈希集合中是否存在这个值 key 。void remove(key) 将给定值 key 从哈希集合中删除。如果哈希集合中没有这个值，什么也不做。
+示例
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-18 11:45" pubdate>
+              2021-03-18
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/LeetCode/">LeetCode</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/18/LeetCode/">LeetCode</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/18/LeetCode/">
+          
+          
+            
+          
+          224.基本计算器
+2021/03/10 星期三
+
+
+实现一个基本的计算器来计算一个简单的字符串表达式 s 的值。
+示例 1：
+输入：s = “1 + 1”输出：2示例 2：
+输入：s = “ 2-1 + 2 “输出：3示例 3：
+输入：s = “(1+(4+5+2)-3)+(6+8)”输出：23
+提示：
+1 &lt;= s.length &lt;= 3 * 105s 由数字、’+’、’-‘、’(
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-18 11:08" pubdate>
+              2021-03-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/LeetCode/">LeetCode</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/03/18/hello-world/">Hello World</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/03/18/hello-world/">
+          
+          
+            
+          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-03-18 10:48" pubdate>
+              2021-03-18
+            </time>
+          </div>
+        
+        
         
       </div>
     </article>
@@ -753,7 +705,7 @@ java方法是语句的集合，它们扎起一起执行一个功能
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </span>
   </nav>
 
