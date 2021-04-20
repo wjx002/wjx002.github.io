@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>3无重复字符的最长子串</title>
+    <link href="/2021/04/20/3%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/"/>
+    <url>/2021/04/20/3%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/</url>
+    
+    <content type="html"><![CDATA[<h4 id="3-无重复字符的最长子串"><a href="#3-无重复字符的最长子串" class="headerlink" title="3. 无重复字符的最长子串"></a><a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/">3. 无重复字符的最长子串</a></h4><p>给定一个字符串，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> com.jiaxu;<br><br><span class="hljs-keyword">import</span> java.util.HashSet;<br><span class="hljs-keyword">import</span> java.util.Set;<br><br><span class="hljs-comment">/*</span><br><span class="hljs-comment">给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。</span><br><span class="hljs-comment"></span><br><span class="hljs-comment"> </span><br><span class="hljs-comment"></span><br><span class="hljs-comment">示例 1:</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">输入: s = &quot;abcabcbb&quot;</span><br><span class="hljs-comment">输出: 3</span><br><span class="hljs-comment">解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。</span><br><span class="hljs-comment">* */</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_3</span>无重复字符的最长子串 </span>&#123;<br>    <span class="hljs-comment">//滑动窗口技巧</span><br>    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">lengthOfLongestSubstring</span><span class="hljs-params">(String s)</span> </span>&#123;<br>        <span class="hljs-comment">//哈希集合，记录每字符是否出现过</span><br>        Set&lt;Character&gt; occ = <span class="hljs-keyword">new</span> HashSet&lt;Character&gt;();<br><br>        <span class="hljs-keyword">int</span> n = s.length();<br>        <span class="hljs-comment">//右指针，初始值为-1，相当于我们在字符串的左边界的左侧，还没有开始移动、</span><br>        <span class="hljs-keyword">int</span> rk = -<span class="hljs-number">1</span>;<br>        <span class="hljs-comment">//记录最长子串的长度</span><br>        <span class="hljs-keyword">int</span> res = <span class="hljs-number">0</span>;<br><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>            <span class="hljs-keyword">if</span> (i != <span class="hljs-number">0</span>) &#123;<br>                <span class="hljs-comment">//除了第一次循环添加，之后的每一次循环，左指针都要向右边移动一次，知道字符串结束</span><br>                occ.remove(s.charAt(i - <span class="hljs-number">1</span>));<br>            &#125;<br>            <span class="hljs-comment">//用while（条件）循环，添加不重复的字符串，直到字符串结束</span><br>            <span class="hljs-keyword">while</span> (rk + <span class="hljs-number">1</span> &lt; n &amp;&amp; !occ.contains(s.charAt(rk + <span class="hljs-number">1</span>))) &#123;<br>                <span class="hljs-comment">//右指针不断右移</span><br>                occ.add(s.charAt(rk + <span class="hljs-number">1</span>));<br>                rk++;<br>            &#125;<br>            <span class="hljs-comment">//这里得到的子串都是不重复子串</span><br>            <span class="hljs-comment">//获取字符串最长的长度</span><br>            res = Math.max(res, rk + <span class="hljs-number">1</span> - i);<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br><br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> x = lengthOfLongestSubstring(<span class="hljs-string">&quot;pwwkew&quot;</span>);<br>        System.out.println(x);<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>滑动窗口技巧</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>LeetCode</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>泛型</title>
     <link href="/2021/04/19/%E6%B3%9B%E5%9E%8B/"/>
     <url>/2021/04/19/%E6%B3%9B%E5%9E%8B/</url>
